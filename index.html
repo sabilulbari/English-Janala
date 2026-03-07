@@ -31,60 +31,81 @@
     <!-- header pirt -->
     <header>
       <!-- navbar -->
-      <nav>
-        <div class="navbar px-[1%] lg:px-[5%] bg-blue-50 shadow-sm p-3">
-          <div class="navbar-start">
-            <div>
-              <a class="flex text-xl items-center font-semibold" href="#">
-                <span>English</span>
-                <img src="assets/logo.png" alt="logo" class="w-8 mr-2" />
-                <span class="font-bangla">জানালা</span>
-              </a>
-            </div>
-          </div>
-          <div class="navbar-end flex gap-4">
-            <a class="btn btn-outline btn-primary hidden lg:flex"><i class="fa-solid fa-circle-question"></i>FAQ</a>
-            <a class="btn btn-outline btn-primary hidden lg:flex"><i class="fa-solid fa-book-open"></i>Learn</a>
-            <a class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
-
-            <div class="dropdown pr-2">
-              <div tabindex="0" role="button" class="btn btn-ghost bg-primary text-white lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
+      <nav class="bg-blue-50 shadow-sm">
+        <div class="max-w-[1760px] mx-auto">
+          <div class="navbar p-3">
+            <div class="navbar-start">
+              <div>
+                <a class="flex text-xl items-center font-semibold" href="#">
+                  <span>English</span>
+                  <img src="assets/logo.png" alt="logo" class="w-8 mr-2" />
+                  <span class="font-bangla">জানালা</span>
+                </a>
               </div>
-              <ul tabindex="-1" class="menu menu-lg dropdown-content bg-blue-50 rounded-box z-1 mt-5 w-52 p-2 shadow">
-                <li>
-                  <a class="hover:bg-blue-200"><i class="fa-solid fa-circle-question"></i>FAQ</a>
-                </li>
-                <li>
-                  <a class="hover:bg-blue-200"><i class="fa-solid fa-book-open"></i>Learn</a>
-                </li>
-                <li>
-                  <a class="hover:bg-blue-200"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
-                </li>
-              </ul>
+            </div>
+            <div class="navbar-end flex gap-4">
+              <a class="btn btn-outline btn-primary hidden lg:flex"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+              <a class="btn btn-outline btn-primary hidden lg:flex"><i class="fa-solid fa-book-open"></i>Learn</a>
+              <a class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+
+              <div class="dropdown pr-2">
+                <div tabindex="0" role="button" class="btn btn-ghost bg-primary text-white lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul tabindex="-1" class="menu menu-lg dropdown-content bg-blue-50 rounded-box z-1 mt-5 w-52 p-2 shadow">
+                  <li>
+                    <a class="hover:bg-blue-200"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+                  </li>
+                  <li>
+                    <a class="hover:bg-blue-200"><i class="fa-solid fa-book-open"></i>Learn</a>
+                  </li>
+                  <li>
+                    <a class="hover:bg-blue-200"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
     <!-- hero section -->
-    <section class="hero flex justify-between flex-col-reverse lg:flex-row items-center gap-10 px-[1%] lg:px-[5%] mt-10">
+    <section class="hero flex justify-between flex-col-reverse lg:flex-row items-center gap-10 max-w-[1760px] mx-auto mt-10">
       <!-- hero left side -->
-      <div>
+      <div class="text-center lg:text-left">
         <h2 class="font-bold text-[60px]"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
-        <p class="font-bangla font-medium text-[24px] text-[#26262ab8]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br>যাবে অন্য একটি Level এ</p>
-        <form action="">
-          <input type="text" placeholder="Enter you name">
-          <input type="password" name="password" id="">
-          <button type="submit">Submit</button>
-        </form>
+        <p class="font-bangla font-medium text-[24px] text-[#26262ab8] py-6">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br class="hidden md:block" />
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br />যাবে অন্য একটি Level এ
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <form class="flex flex-col max-w-[320px] space-y-5 pb-6" action="">
+            <input class="p-2 rounded-md border border-gray-300" type="text" placeholder="Enter you name" />
+            <input class="p-2 rounded-md border border-gray-300" type="password" name="password" />
+            <button class="bg-blue-700 p-2 rounded-md text-white font-semibold" type="submit">Get Started</button>
+          </form>
+        </div>
       </div>
       <!-- hero right side -->
-       <div>
-        <img src="./assets/hero-student.png" alt="">
-       </div>
+      <div>
+        <img src="./assets/hero-student.png" alt="" />
+      </div>
     </section>
+    <!-- lesson section -->
+    <section>
+      <h2 class="font-bold text-[40px] text-center"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h2>
+      <!-- lesson button -->
+      <div id="lesson-buttons" class="flex justify-center gap-5 py-10 flex-wrap"></div>
+
+      <!-- not selected -->
+      <div class="text-center bg-[#F8F8F8] max-w-[1760px] mx-auto rounded-2xl py-[64px]">
+        <p class="font-bangla font-regular text-[14px] text-[#26262ab8] py-6">আপনি এখনো কোন Lesson Select করেন নি</p>
+        <p class="font-bangla font-medium text-[34px] text-[#26262ab8]">একটি Lesson Select করুন</p>
+      </div>
+    </section>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
